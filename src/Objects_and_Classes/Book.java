@@ -1,10 +1,11 @@
 package Objects_and_Classes;
 
+import java.util.Objects;
+
 public class Book {
     private final String title;
+    private final Author name;
     public int releaseDate;
-    public Author name;
-
     public Book (String title, Author name, int releaseDate){
         this.title = title;
         this.name = name;
@@ -15,5 +16,27 @@ public class Book {
     }
     public void setReleaseDate(int releaseDate){
         this.releaseDate = releaseDate;
+    }
+
+    @Override
+    public String toString() {
+        return "Book{" +
+                "title='" + title + '\'' +
+                ", name=" + name +
+                ", releaseDate=" + releaseDate +
+                '}';
+    }
+
+    @Override
+    public boolean equals(Object o) {
+        if (this == o) return true;
+        if (o == null || getClass() != o.getClass()) return false;
+        Book book = (Book) o;
+        return releaseDate == book.releaseDate && title.equals(book.title) && name.equals(book.name);
+    }
+
+    @Override
+    public int hashCode() {
+        return Objects.hash(title, name, releaseDate);
     }
 }

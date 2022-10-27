@@ -17,5 +17,20 @@ public class Main {
 
         contact.setReleaseDate(1985);
         System.out.println("contact.releaseDate = " + contact.releaseDate);
+
+
+        System.out.println(name);
+        System.out.println(name1);
+        System.out.println(dandelionWine);
+        System.out.println(contact);
+
+        System.out.println(name.equals(name1));
+        System.out.println(name.hashCode());
+        System.out.println(name1.hashCode());
+
+        System.out.println(dandelionWine.equals(contact));
+        System.out.println(dandelionWine.hashCode());
+        System.out.println(contact.hashCode());
+
     }
 }
