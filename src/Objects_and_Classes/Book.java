@@ -1,11 +1,13 @@
 package Objects_and_Classes;
 
 public class Book {
-    String title;
-    int releaseDate;
+    private final String title;
+    public static int releaseDate;
+    public Author name;
 
-    public Book (String title, int releaseDate){
+    public Book (String title, Author name, int releaseDate){
         this.title = title;
+        this.name = name;
         this.releaseDate = releaseDate;
     }
     public String getTitle() {
