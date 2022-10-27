@@ -14,6 +14,7 @@ public class Main {
         System.out.println("contact.title = " + contact.getTitle());
         System.out.println("name1.authorName + name1.authorSurname = " + name1.getAuthorName() + " " + name1.getAuthorSurname());
         System.out.println("book.releaseDate = " + contact.releaseDate);
+
         contact.setReleaseDate(1985);
         System.out.println("contact.releaseDate = " + contact.releaseDate);
     }

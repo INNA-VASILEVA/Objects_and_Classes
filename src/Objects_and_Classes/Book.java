@@ -2,7 +2,7 @@ package Objects_and_Classes;
 
 public class Book {
     private final String title;
-    public static int releaseDate;
+    public int releaseDate;
     public Author name;
 
     public Book (String title, Author name, int releaseDate){
