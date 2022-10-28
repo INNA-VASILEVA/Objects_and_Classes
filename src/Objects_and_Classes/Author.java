@@ -40,3 +40,4 @@ public class Author {
         return Objects.hash(authorName, authorSurname);
     }
 }
+//проверка работы мерджа и пула

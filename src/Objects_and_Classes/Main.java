@@ -31,6 +31,6 @@ public class Main {
         System.out.println(dandelionWine.equals(contact));
         System.out.println(dandelionWine.hashCode());
         System.out.println(contact.hashCode());
-
+//проверка работы мерджа и пула
     }
 }
