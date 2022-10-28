@@ -40,3 +40,4 @@ public class Book {
         return Objects.hash(title, name, releaseDate);
     }
 }
+//проверка работы мерджа и пула
